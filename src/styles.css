@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 100%;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #EEEEEE;
+}
+
+body, main, input, button {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+}
+
+#main-container {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-main-container {
+    margin: 0;
+    width: 90%;
+    min-height: 5rem;
+    height: auto;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-input-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+#todo-input {
+    flex: 1;
+}
+
+#todo-input-container button {
+    flex-shrink: 0; 
+    cursor: pointer;
+}
+
+#todos-container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.todo-container {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.todo-details-container {
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.details-dialog {
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.details-dialog h2 {
+    margin: 0;
+    color: #3270da;
+}
+
+.dialog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.dialog-form select {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+}
+
+.dialog-form input[type="submit"] {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #6798ec;
+    border-color: #304b79;
+}
+
+.dialog-form input[type="submit"]:hover {
+    background-color: #4e77bf;
+}
+
+.todo-description-dialog {
+    width: 90%;
+    max-width: 500px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.todo-description-dialog h2 {
+    margin: 0;
+    color: #3270da;
+}
+
+.todo-description-dialog h3 {
+    margin: 0;
+}
+
+.todo-task-paragraph {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.todo-task-paragraph input[type="checkbox"] {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+#todo-input-container button {
+    color: white;
+    font-weight: bold;
+    background-color: #6798ec;
+    border-color: #304b79;
+}
+
+#todo-input-container button:hover {
+    background-color: #4e77bf;
+}
+
+.todo-details-container button {
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.todo-description-button {
+    color: #3270da;
+}
+
+.todo-description-button:hover {
+    color: #2c61bc;
+}
+
+.remove-todo-button {
+    color: rgb(70, 70, 70);
+}
+
+.remove-todo-button:hover {
+    color: black;
+}
+
+@media (min-width: 900px) {
+
+    body, main, input, button {
+        font-size: 1.2rem;
+    }
+
+    #main-container {
+        margin: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dialog-form select {
+        font-size: 1.2rem;
+        padding: 0.25rem 0;
+    }
+
+}
